@@ -1,0 +1,94 @@
+.first-screen {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 60px;
+
+	.container {
+		flex: 1 1 auto;
+		min-height: 100vh;
+		max-width: 1200px;
+	}
+	.row-wrapper {
+		display: flex;
+	}
+	.template-title {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.template-description {
+		max-width: 731px;
+		margin-bottom: 50px;
+	}
+	.vertical-text {
+		display: inline-block;
+		writing-mode: vertical-lr;
+		text-orientation: upright;
+		margin: 0 auto;
+	}
+
+	.template-row {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+		max-width: 1200px;
+	}
+}
+
+// Styles for slider
+// .slider-template {
+	// position: relative;
+// }
+.slider-img {
+	position: relative;
+}
+.slick-arrow {
+	position: absolute;
+	right: -60px;
+	z-index: 1;
+	background-color: #12f20e;
+    bottom: -60px;
+	font-size: 0;
+    &.slick-prev {
+        transform: translate(0, -50%) rotate(180deg);
+        right: initial;
+        left: -30px;
+		background: url(../assets/img/arrow-left.svg) 0 0 / 100% no-repeat;
+    }
+}
+
+
+.animated-block {
+	margin-bottom: 32px;
+	max-width: 1198px;
+	height: 50px;
+	border: 1px solid black;
+	background-color: black;
+	background: black url(assets/img/sprite-arrows.png) 0 /1259px no-repeat;
+
+	animation: 3s arrows steps(37) infinite;
+}
+
+@keyframes arrows {
+	0% {
+		background-position: 100% 1px;
+	}
+
+	100% {
+		background-position: 0 1px;
+	}
+}
+
+.has-text {
+	position: relative;
+}
+.description-over-img {
+	max-width: 335px;
+	position: absolute;
+	color: #fff;
+	top: 10px;
+	left: 20px;
+	right: 20px;
+	font-size: 16px;
+	line-height: 135%;
+}

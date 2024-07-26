@@ -1,0 +1,23 @@
+body {
+	height: 100%;
+	background: url(assets/img/bg-img.png) center/cover no-repeat;
+	font-family: "Montserrat", sans-serif;
+	font-weight: normal;
+}
+section {
+	max-width: 1440px;
+}
+.template-title {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 120%;
+	text-transform: uppercase;
+	background: linear-gradient(90deg, #000 0%, #4c4c4c 51.43%, #000 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700;
+}
+.slick-track {
+	display: flex;
+}
