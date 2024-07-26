@@ -36,27 +36,13 @@
 }
 
 // Styles for slider
-// .slider-template {
-	// position: relative;
-// }
-.slider-img {
-	position: relative;
-}
-.slick-arrow {
-	position: absolute;
-	right: -60px;
-	z-index: 1;
-	background-color: #12f20e;
-    bottom: -60px;
-	font-size: 0;
-    &.slick-prev {
-        transform: translate(0, -50%) rotate(180deg);
-        right: initial;
-        left: -30px;
-		background: url(../assets/img/arrow-left.svg) 0 0 / 100% no-repeat;
-    }
-}
 
+// Почему-то не работает свойство "appendArrows"
+.arrows-container {
+	background-color: aqua;
+	width: 100px;
+	height: 100px;
+}
 
 .animated-block {
 	margin-bottom: 32px;

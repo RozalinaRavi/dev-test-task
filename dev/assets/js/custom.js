@@ -4,6 +4,7 @@ function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
 		mobileFirst: true,
 		dots: $dots,
 		arrows: $arrows,
+		appendArrows: $('.arrows-container'),
 		responsive: [
 			{
 				breakpoint: $breakpoint,
